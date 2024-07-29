@@ -1,0 +1,12 @@
+# WordPress core files
+/wordpress/
+
+# Sensitive files
+wp-config.php
+
+# Uploads
+wp-content/uploads/
+
+# Other
+.htaccess
+*.log

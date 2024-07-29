@@ -1,0 +1,956 @@
+/*
+Theme Name: AIIMS
+Theme URI: https://aiimsbhubaneswar.nic.in/
+Author: Team Silicon Techlab
+Author URI: https://aiimsbhubaneswar.nic.in/
+Description: Our theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: university
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+/* inner page css */
+.inner-content ul {
+  list-style: none;
+}
+
+.inner-content ul li {
+  padding: 5px 0px;
+  display: inline-block;
+    width: 100%;
+
+}
+
+.inner-content ul li:before {
+  content: "\f0a4";
+  font-family: "FontAwesome";
+  color: #ff8d4f;
+  float: left;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+/* inner page css */
+
+.table-responsive th{text-align: center !important;}
+
+
+/* Administrative page CSS*/
+
+.teamGrid .colmun{
+	margin-bottom: 120px;
+}
+.teamGrid {
+    display: grid;
+    grid-template-columns: 24.24% 24.24% 24.24% 24.24%;
+    column-gap: 1.5%;
+    margin-top: 100px;
+}
+.avatar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100px;
+    text-align: center;
+}
+.teamcolinner {
+    position: relative;
+}
+.avatar > img {
+    width: 150px;
+    margin: auto;  
+}
+.teamcolinner {
+    position: relative;
+    border: 1px dashed #ddd;
+    min-height: 100px;
+    background: #fff;
+    z-index: 9;
+}
+.teamcol {
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+.teamcol:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 3px 10px 3px rgb(170 170 173 / 0.5);
+    transition: transform 1s ease-in-out;
+}
+.teamcol:before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: -webkit-linear-gradient(#ffbf00, #ffa000);
+    border-top-right-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+.teamcol:after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(#0052cc, #005fec);
+    border-bottom-left-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+.teamcol:hover::before, .teamcol:hover::after {
+    width: 100%;
+    transition: width 1s ease-in-out;
+}
+.member-name {
+    margin-top: 80px;
+}
+.member-name h2{
+	font-size: 16px;
+	margin-bottom: 0px;
+	padding: 5px 0px;
+}
+.member-info {
+    padding: 0px 20px;
+}
+.member-info p{
+	margin-bottom: 0px;
+	padding: 5px 0px;
+	font-size: 14px;
+}
+.social-listing {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.social-listing >li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #f4f5f7;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.content-area{
+	padding: 0px 0px 20px 0px;
+	
+}
+
+/* Committees page CSS */
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+}
+.accordion-button::after {
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  background-color: var(--bs-danger);
+  background-image: none !important;
+}
+.accordion-button.collapsed::after {
+  background-color: var(--bs-gray-300);
+}
+table.dataTable{
+	width: 100% !important;
+}
+
+.table thead tr th {
+    background: #be4400;
+    color: #fff;
+}
+
+nav.pagnav span, .dataTables_paginate.paging_simple_numbers .paginate_button.current {
+    background: #7d0c21 !important;
+    color: #FFF !important;
+}
+
+/* Department Page CSS */
+
+.inner-content .pg_widget {
+    height: 106px;
+}
+.dbox a:hover{
+	cursor: pointer;
+    border-color: #ff3d00 !important;
+    background: transparent linear-gradient(200deg, #ffac79 0%, #ff3d00 100%) 0% 0% no-repeat;
+    color: #fff;
+}
+.dbox .pg_widget img {
+    transition: filter 0.3s ease;
+}
+
+.dbox .pg_widget:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(180deg) brightness(103%) contrast(103%);
+}
+
+.dbox:hover h5 {
+    color: #fff;
+}
+.pg_widget {
+    background: #fff;
+    box-shadow: 0px 0px 36px rgb(16 40 81 / 12%);
+    padding: 16px 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+	color: #222;
+	text-decoration: none;
+}
+
+.pg_widget img {
+    width: 42px;
+    font-size: 12px;
+}
+
+.pg_widget h5 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+    padding-top: 8px;
+    margin: 0px;
+	text-align: center;
+}
+.dbox{
+	padding-bottom: 20px;
+}
+
+/* Department Page CSS */
+
+
+/* ======================nursing css========================== */
+
+/* =========== Landing Page================ */
+#nursing_nav2_img1{
+  width: 480px;
+}
+#nursing_nav2_btn{
+  text-decoration: none;
+  position: relative;
+  z-index: 888;
+  padding: 7px 15px;
+  background: white;
+  color: #13029c;
+  border: 1px solid #13029c;
+  transition: 0.3s ease-in-out;
+}
+#nursing_nav2_btn:hover{
+  background:  #13029c;
+  color: #fff;
+}
+
+/* ==============nursing_hero section=================== */
+#nursing_hero{
+
+}
+.nurs_div1,.nurs_div2{
+  padding: 20px;
+  border-radius: 5px;
+  background: rgb(220, 235, 255);
+  border: 0.5px solid rgb(146, 166, 255);
+}
+.nurs_div1 h3,.nurs_div2 h3{
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(0, 0, 40);
+}
+.nurs_div1 p{
+  text-align: justify;
+  padding: 10px 0;
+}
+.nurs_div1 a{
+  text-decoration: none;
+  padding: 7px 15px;
+  color: #13029c;
+  border: 1px solid #13029c;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  text-align: right;
+  border-radius: 5px;
+}
+.nurs_div1 a:hover{
+  background:  #13029c;
+  color: #fff;
+}
+.nurs_div2 a{
+  text-decoration: none;
+  border-radius: 5px;
+  background: #ffffff;
+  font-weight: 600;
+  color: #000;
+  font-size: 13px;
+  border: 0.5px solid rgb(146, 166, 255);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 7px 12px;
+}
+.nurs_div2 a:last-child{
+  margin-bottom: 0px;
+}
+.nurs_div2 a img{
+  width: 40px;
+  margin-right: 5px;
+}
+
+#nurse_3card .card{
+  padding: 20px;
+  border-radius: 5px;
+  background: rgb(220, 235, 255);
+  border: 0.5px solid rgb(146, 166, 255);
+  text-align: center;
+}
+#nurse_3card .card img{
+  padding-bottom: 10px;
+}
+#nurse_3card .card p{
+  font-weight: 700;
+  color: #13029c;
+  font-size: 20px;
+  margin: 0;
+}
+
+
+/* ===============faculity page================= */
+
+#faculity_container .faculity_left .prof_img{
+  width: 100%;
+}
+#faculity_container .faculity_left .socials{
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+}
+#faculity_container .faculity_left .soc_card{
+  background: #ff8d4f;
+  padding: 5px 8px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border-radius: 7px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+#faculity_container .faculity_left .soc_card:hover{
+  background: #db611f;
+  color: black !important;
+  border-radius: 0px;
+}
+#faculity_container .faculity_left .soc_card a{
+  text-decoration: none;
+  color: white;
+}
+#faculity_container .faculity_left .content .sm_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 2px;
+  background-color:  #ffe0cf;
+  border-radius: 5px;
+}
+#faculity_container .faculity_left .content .sm_card img{
+  width: 100%;
+}
+#faculity_container .faculity_left .content .sm_card p{
+  font-size: 13px;
+  margin-top: 3px;
+  margin: 0;
+}
+.fac_info_1{
+  background:#ffe0cf;
+  border-radius: 5px;
+  padding: 15px 15px 5px 15px;
+}
+.fac_info_1 h5{
+  position: relative;
+  padding-bottom: 6px;
+  margin-bottom: 9px;
+  border-bottom: 2px solid black;
+}
+.fac_info_1 h5:before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg,#ff8d4f,black);
+  z-index: 1;
+}
+.fac_info_1 h6,.fac_info_1 ul{
+  margin: 0;
+}
+
+
+.faculity_right .fac_info_2 h2{
+  font-weight: 600;
+}
+.faculity_right .fac_info_2 h5{
+  border-bottom: 0.5px solid rgb(170, 170, 170);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+.faculity_right .fac_info_2 h6{
+  margin-bottom: 10px;
+}
+.faculity_right .fac_info_2 p{
+  margin: 0;
+  padding-bottom: 2px;
+}
+.faculity_right .fac_info_2 span{
+  display: block;
+  color:#ff8d4f;
+  font-size: 18px;
+  margin:7px 0;
+}
+.faculity_right .info_card{
+  text-align: center;
+  background: #ff8d4f;
+  border-radius: 0px 30px 0px 30px;
+  padding: 20px;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.faculity_right .info_card:hover{
+  border-radius: 0;
+  color: black;
+}
+.faculity_right .info_card p{
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+.faculity_right .personal_info{
+  background:#ffe0cf;
+  border-radius: 5px;
+  padding: 20px;
+
+}
+.faculity_right .personal_info h4{
+  position: relative;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+.faculity_right .personal_info h4:before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 30%;
+  height: 4px;
+  background: linear-gradient(90deg,#ff8d4f,black);
+  z-index: 1; 
+}
+.faculity_right .personal_info h5{
+  margin: 0;
+}
+.faculity_right .personal_info p{
+  margin-bottom: 7px;
+}
+.faculity_right .personal_info i{
+  color: #ff8d4f;
+  margin-right: 4px;
+}
+.faculity_right  #accordionFlushExample .accordion-item{
+  background:#fff0e7;
+}
+.faculity_right  .accordion-button{
+  background:#ffe0cf !important;
+}
+.faculity_right .accordion-button:not(.collapsed){
+  background:#ff8d4f !important;
+}
+.faculity_right .accordion-button:focus{
+  box-shadow: none !important;
+}
+.faculity_right .accordion-button:hover{
+  background:#ff8d4f !important;
+}
+
+
+
+/* Faculty Card Design */
+   .faculty-sec-tab .tabs-left {
+   border-bottom: medium none;
+   margin-bottom: 20px;
+   }
+   .faculty-sec-tab .tabs-left > .tablinks.active {
+   background: none repeat scroll 0% 0% #215F88;
+   color: #F0EFEF;
+   font-size: 16px;
+   font-weight: 500;
+   position: relative;
+   }
+   .faculty-search {
+   margin-bottom: 15px;
+   padding-top:10px;
+   }
+   .facultycount {
+   background: none repeat scroll 0% 0% #F3F3F3;
+   padding: 12px;
+   font-size: 12px;
+   text-align: center;
+   color: #215F88;
+   }
+   img {
+   max-width: 100%;
+   }
+
+img,
+figure {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+.grid-xlarge {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 54em) {
+  .grid-xlarge {
+    width: 95%;
+  }
+}
+@media (min-width: 91em) {
+  .grid-xlarge {
+    width: 80%;
+  }
+}
+
+.absolute-bg {
+    padding-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.faculty-items h3 {
+    font-size: 14px;
+    text-align: center;
+    min-height: 0px;
+    margin-bottom: 0px;
+    color: #023634;
+}
+.team {
+  width: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.team__container {
+  display: inline-block; 
+  align-items: center;
+  justify-content: center;
+}
+.team__container > * {
+  padding: 1em;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+.team__link {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #f3f3f3;
+  background-clip: padding-box;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  transition: all 1s ease;
+}
+.team__link:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 47px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -0.5em, 0);
+          transform: translate3d(0, -0.5em, 0);
+border: 1px solid #47bec7;
+}
+.team__link:hover:after {
+  opacity: 1;
+}
+.team__link:hover .team__title:after {
+  left: 0;
+  width: 100%;
+}
+.team__link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-clip: padding-box;
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.team__header {
+  margin-bottom: 2em;
+  color: #47bec7;
+  text-align: center;
+}
+.team__img-container {
+  position: relative;
+}
+.team__img {
+    padding-top: 10px;
+  position: relative;
+  padding-bottom: 100%;
+  -webkit-animation: fade-in ease-in-out 1s both;
+          animation: fade-in ease-in-out 1s both;
+}
+.team__text {
+  padding: 1em 0.5em;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+}
+@media (min-width: 32em) {
+  .team__text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.team__title {
+  position: relative;
+  display: inline-block;
+  /*
+   * Add hover to pseudo element
+   * left: 0;
+   * width: 100%
+   */
+  margin-bottom: 0.35em;
+}
+.team__title:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.1em;
+  height: 2px;
+  width: 0;
+  background-color: #47bec7;
+  transition: all 0.3s ease-in-out;
+}
+.team__position {
+  display: block;
+  font-size: 0.9em;
+}
+.col-md-3{
+	margin-bottom: 20px;
+}
+   .py-4{overflow: hidden;}
+   
+.facultycount img{width: auto !important;}
+
+.view-all a{text-decoration: none; color: #fff;}
+/* Department Individual Page*/
+.about-sec-tab .tabs-left {
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+}
+
+.about-sec-tab .tabs-left > .tablinks.active {
+    background: #F56702;
+    color: #f0efef;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+}
+
+.about-sec-tab .tabs-left > .tablinks {
+    width: 95%;
+    float: none;
+    margin: 0px;
+    padding: 15px 20px;
+    line-height: 1.2;
+    font-size: 15px;
+    border: unset;
+    text-align: left;
+    color: #c3761d;
+    cursor: pointer;
+    font-family: 'montserratnormal', sans-serif;
+    border-bottom: 1px solid #dfcfbd;
+}
+
+.trending-box-title h2 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-top: 0px;
+    border-bottom: double #cccc;
+    padding: 0px 0px 10px 0px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    color: #093d8c;
+    font-family: 'montserratlight', sans-serif;
+}
+
+.back-btn {
+    float: right;
+}
+.back-btn a {
+    color: #0072bc;
+}
+.trending-box ul li {
+    line-height: 30px;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 25px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.trending-box ul li:before {
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    content: "\f101";
+    font-family: fontawesome;
+    color: #296dc1;
+    font-size: 16px;
+    top: 0;
+}
+
+.trending-box img{
+	width: 100%;
+}
+
+.gallery-item {
+  display: block;
+}
+
+.gallery-item img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
+}
+
+.gallery-item:hover img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-modal .modal-content {
+  background-color: var(--lightbox);
+}
+
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  z-index: 10;
+  filter: invert(1) grayscale(100);
+}
+
+.lightbox-modal .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.lightbox-modal .lightbox-content {
+  width: 100%;
+}
+
+.lightbox-modal .carousel-indicators {
+  margin-bottom: 0;
+}
+
+.lightbox-modal .carousel-indicators [data-bs-target] {
+  background-color: var(--carousel-text) !important;
+}
+
+.lightbox-modal .carousel-inner {
+  width: 75%;
+}
+
+.lightbox-modal .carousel-inner img {
+  animation: zoomin 10s linear infinite;
+}
+
+.lightbox-modal .carousel-item .carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 2rem;
+  background-color: var(--lightbox);
+  color: var(--carousel-text) !important;
+}
+
+.lightbox-modal .carousel-control-prev,
+.lightbox-modal .carousel-control-next {
+  width: auto;
+}
+
+.lightbox-modal .carousel-control-prev {
+  left: 1.25rem;
+}
+
+.lightbox-modal .carousel-control-next {
+  right: 1.25rem;
+}
+
+@media (min-width: 1400px) {
+  .lightbox-modal .carousel-inner {
+    max-width: 60%;
+  }
+}
+
+[data-bs-theme = "dark"] .lightbox-modal .carousel-control-next-icon,
+[data-bs-theme = "dark"] .lightbox-modal .carousel-control-prev-icon {
+    filter: none;
+}
+
+.btn-fullscreen-enlarge,
+.btn-fullscreen-exit {
+  position: absolute;
+  top: 1.25rem;
+  right: 3.5rem;
+  z-index: 10;
+  border: 0;
+  background: transparent;
+  opacity: .6;
+  font-size: 1.25rem;
+}
+
+.bi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.035em;
+  fill: currentcolor;
+}
+/* ================patients card section================== */
+#pateint_card_container .patient_card{
+  border: 1px solid #c1bdbd;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 90%;
+}
+#pateint_card_container .patient_card:hover{
+  box-shadow: 0 0 25px 1px rgb(0 0 0 / 15%);
+}
+#pateint_card_container .patient_card h6{
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #333;  
+}
+#pateint_card_container .patient_card i{
+  font-size: 50px;
+  margin: 20px 0;
+  color: #ff8d4f;
+}
+#pateint_card_container .patient_card p{
+  margin: 0px 0 10px 0;
+  color: #999;
+  font-size: 14px;
+}
+#pateint_card_container .patient_card a{
+  padding: 6px 25px;
+    background: #ff8d4f;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    width: 114px;
+    height: 33px;
+}
+#pateint_card_container .patient_card a:hover {
+  text-decoration: none;
+}
+#pateint_card_container .patient_card a span{
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 25px;
+}
+#pateint_card_container .patient_card a:hover span{
+  left: 10px;
+}
+#pateint_card_container .patient_card a i{
+  font-size: 10px;
+  position: absolute;
+  right: -30px;
+  background: #b76539;
+  color: white;
+  top: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  bottom: 0;
+  padding: 11px 8px;
+  margin: 0;
+}
+#pateint_card_container .patient_card a:hover i {
+  right: 0;
+}
+.barchives{
+	display: flex;
+    justify-content: flex-end;
+}
